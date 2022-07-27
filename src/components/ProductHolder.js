@@ -25,7 +25,7 @@ function ProductHolder({ product }) {
             <Container>
                 <Grid container spacing={2}>
                     {product.map((prod) => (
-                        <Grid item key={prod.id} xs={12} sm={6} md={4}>
+                        <Grid item key={prod.id} xs={10} sm={4} md={4}>
                             <Card sx={{ maxWidth: 350 }}>
                                 <CardActionArea>
                                     <CardMedia
@@ -34,6 +34,7 @@ function ProductHolder({ product }) {
                                         image={prod.image}
                                         alt="image"
                                     />
+                                  <div style={{ backgroundColor: "black" }}>
                                     <CardContent>
                                         <Typography gutterBottom variant="h6" component="div">
                                             {prod.title}
@@ -42,6 +43,7 @@ function ProductHolder({ product }) {
                                             {prod.description}
                                         </Typography>
                                     </CardContent>
+                                  </div>
                                 </CardActionArea>
                                 <CardActions>
                                     <Button size="small" color="primary">
