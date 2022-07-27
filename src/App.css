@@ -1,6 +1,13 @@
 .App {
-  text-align: center;
-  background-color: black; 
+  text-align: center; 
+}
+
+.multiline {
+  display: -webkit-box;
+    max-width: 200px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .App-logo {
