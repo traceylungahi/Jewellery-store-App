@@ -8,7 +8,7 @@ import Contacts from './components/Contacts';
 import ProductHolder from './components/ProductHolder';
 
 function App() {
-  const url = "https://fakestoreapi.com/products/category/jewelery";
+  const url = "http://localhost:3000/products";
   const [product, setProduct] = useState([]);
   
 

@@ -18,8 +18,9 @@ const useStyles = makeStyles((theme) => ({
 
 function ProductHolder({ product }) {
   const classes=useStyles()
-
-    console.log(product)
+  
+    // console.log(product)
+    
     return (
         <div>
             <Container>

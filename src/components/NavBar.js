@@ -14,7 +14,7 @@ function NavBar() {
                     <IconButton size='small' edge='start' color='inherit' aria-label='logo'>
                         Home
                     </IconButton>
-                    <Typography variant='h4' component='div' sx={{ flexGrow: 1 }}>
+                    <Typography variant='h4' component='div' sx={{ flexGrow: 3 }}>
                     </Typography>
                     <Stack direction='row' spacing={3}>
                         <Button color='inherit'>
