@@ -1,6 +1,5 @@
 import React from "react";
-import { Typography, AppBar, Button, CssBaseline, Toolbar, Stack, Badge } from '@mui/material'
-import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import { Typography, AppBar, Button, CssBaseline, Toolbar, Stack } from '@mui/material'
 import IconButton from "@mui/material/IconButton";
 import { NavLink } from 'react-router-dom';
 
@@ -23,11 +22,9 @@ function NavBar() {
                         <Button color='inherit'>
                             <NavLink to='/about'>About</NavLink>
                         </Button>
-                        <Badge badgeContent={2}>
-                            <IconButton color="inherit" aria-label="add to shopping cart">
-                                <NavLink to='/cart'> <AddShoppingCartIcon /></NavLink>
-                            </IconButton>
-                        </Badge>
+                        <Button color='inherit'>
+                            <NavLink to='/add'>Add Product</NavLink>
+                        </Button>
                     </Stack>
                 </Toolbar>
             </AppBar>

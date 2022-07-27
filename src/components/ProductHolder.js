@@ -37,11 +37,14 @@ function ProductHolder({ product }) {
                                     />
                                   <div style={{ backgroundColor: "bisque" }}>
                                     <CardContent>
-                                        <Typography gutterBottom variant="h6" color="black" component="div">
+                                        <Typography gutterBottom variant="h6" color="black" component="div" className={classes.multiLine}>
                                             {prod.title}
                                         </Typography>
                                         <Typography variant="body2" color="grey" className={classes.multiLine}>
                                             {prod.description}
+                                        </Typography>
+                                        <Typography variant="body2" color="grey" className={classes.multiLine}>
+                                            {prod.price}
                                         </Typography>
                                     </CardContent>
                                   </div>

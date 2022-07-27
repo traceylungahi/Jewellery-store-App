@@ -20,15 +20,16 @@ function App() {
 
   return (
     <div className="App">
+      <NavBar />
       <Routes>
         <Route
             path="/"
             element={<Home product={product} />}
         />
           <Route path="/about" element={<About />} />
-          <Route path="/navbar" element={<NavBar />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/productholder" element={<ProductHolder />} />
+          <Route path="/addproducts" element={<AddProducts />} />
       </Routes>
     </div>
   );
