@@ -7,11 +7,11 @@ import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions, Container, Grid } from '@mui/material';
 
 const useStyles = makeStyles((theme) => ({
-  multiLineEllipsis: {
+  multiLine: {
     overflow: "hidden",
     textOverflow: "ellipsis",
     display: "-webkit-box",
-    "-webkit-line-clamp": 2,
+    "-webkit-line-clamp": 3,
     "-webkit-box-orient": "vertical",
 }}))
 
@@ -22,24 +22,23 @@ function ProductHolder({ product }) {
     console.log(product)
     return (
         <div>
-
             <Container>
-                <Grid container spacing={3}>
+                <Grid container spacing={2}>
                     {product.map((prod) => (
-                        <Grid item key={prod.id} xs={12} sm={6} md={3}>
-                            <Card sx={{ maxWidth: 345 }}>
+                        <Grid item key={prod.id} xs={12} sm={6} md={4}>
+                            <Card sx={{ maxWidth: 350 }}>
                                 <CardActionArea>
                                     <CardMedia
                                         component="img"
                                         height="140"
                                         image={prod.image}
-                                        alt="green iguana"
+                                        alt="image"
                                     />
                                     <CardContent>
-                                        <Typography gutterBottom variant="h5" component="div">
+                                        <Typography gutterBottom variant="h6" component="div">
                                             {prod.title}
                                         </Typography>
-                                        <Typography variant="body3" color="text.secondary" className={classes.multiLineEllipsis}>
+                                        <Typography variant="body3" color="text.secondary" className={classes.multiLine}>
                                             {prod.description}
                                         </Typography>
                                     </CardContent>
@@ -56,6 +55,6 @@ function ProductHolder({ product }) {
             </Container>
         </div>
 
-    )
+      )
 }
  export default ProductHolder;
