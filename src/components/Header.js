@@ -6,7 +6,7 @@ function Header() {
         <div>
             <div>
                 <Typography variant='h4' align='center' color='textPrimary' margin='20px' gutterBottom>
-                    Best market 
+                    Best Buy 
                 </Typography>
             </div>
         </div>            

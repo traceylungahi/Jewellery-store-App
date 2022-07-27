@@ -9,7 +9,7 @@ function NavBar() {
     return(
         <div>
             <CssBaseline />
-            <AppBar position='static'>
+            <AppBar position='static' color='primary'>
                 <Toolbar style={{ margin: "0.5px" }}>
                     <IconButton size='small' edge='start' color='inherit' aria-label='logo'>
                         Home
@@ -23,7 +23,7 @@ function NavBar() {
                         <Button color='inherit'>
                             <NavLink to='/about'>About</NavLink>
                         </Button>
-                        <Badge badgeContent={2} color="secondary">
+                        <Badge badgeContent={2}>
                             <IconButton color="inherit" aria-label="add to shopping cart">
                                 <NavLink to='/cart'> <AddShoppingCartIcon /></NavLink>
                             </IconButton>

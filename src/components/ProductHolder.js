@@ -34,18 +34,18 @@ function ProductHolder({ product }) {
                                         image={prod.image}
                                         alt="image"
                                     />
-                                  <div style={{ backgroundColor: "black" }}>
+                                  <div style={{ backgroundColor: "bisque" }}>
                                     <CardContent>
-                                        <Typography gutterBottom variant="h6" color="white" component="div">
+                                        <Typography gutterBottom variant="h6" color="black" component="div">
                                             {prod.title}
                                         </Typography>
-                                        <Typography variant="body2" color="white" className={classes.multiLine}>
+                                        <Typography variant="body2" color="grey" className={classes.multiLine}>
                                             {prod.description}
                                         </Typography>
                                     </CardContent>
                                   </div>
                                 </CardActionArea>
-                                <CardActions style={{ backgroundColor: "black" }}>
+                                <CardActions style={{ backgroundColor: "bisque" }}>
                                     <Button size="small" color="primary">
                                         Add to cart
                                     </Button>
