@@ -1,30 +1,36 @@
 import React from "react";
-import { Typography, Stack, AppBar, Button } from "@mui/material";
+import { Typography, AppBar, Button, CssBaseline, Toolbar, Stack, Badge } from '@mui/material'
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import IconButton from "@mui/material/IconButton";
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
+
 
 function NavBar() {
     return(
         <div>
+            <CssBaseline />
             <AppBar position='static'>
-                <Button color='white'>Home</Button>
-                <Button color='white'>About Us</Button>
-                <Button color='white'>Contacts</Button>
-                <IconButton color='blue' sans-serif='Add To Shopping Cart'></IconButton>
-                <Typography variant='h4' component='div'>
-                    JEWELLERY
-                </Typography>
-                <Stack direction='row' spacing={3}>
-                    <Button color='white'>
-                        <Navlink to='/'>Home</Navlink>
-                    </Button>
-                    <Button color='white'>
-                        <Navlink to='/contact'>Contacts</Navlink>
-                    </Button>
-                    <Button color='white'>
-                        <Navlink to='/about'>About</Navlink>
-                    </Button>
-                </Stack>
+                <Toolbar style={{ margin: "5px" }}>
+                    <IconButton size='medium' edge='start' color='inherit' aria-label='logo'>
+                        Home
+                    </IconButton>
+                    <Typography variant='h6' component='div' sx={{ flexGrow: 1 }}>
+                        
+                    </Typography>
+                    <Stack direction='row' spacing={2}>
+                        <Button color='inherit'>
+                            <NavLink to='/contact'>Contact</NavLink>
+                        </Button>
+                        <Button color='inherit'>
+                            <NavLink to='/about'>About</NavLink>
+                        </Button>
+                        <Badge badgeContent={2} color="secondary">
+                            <IconButton color="inherit" aria-label="add to shopping cart">
+                                <NavLink to='/cart'> <AddShoppingCartIcon /></NavLink>
+                            </IconButton>
+                        </Badge>
+                    </Stack>
+                </Toolbar>
             </AppBar>
         </div>
     )
