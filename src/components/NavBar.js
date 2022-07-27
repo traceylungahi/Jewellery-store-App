@@ -10,12 +10,11 @@ function NavBar() {
         <div>
             <CssBaseline />
             <AppBar position='static'>
-                <Toolbar style={{ margin: "5px" }}>
-                    <IconButton size='medium' edge='start' color='inherit' aria-label='logo'>
+                <Toolbar style={{ margin: "0.5px" }}>
+                    <IconButton size='small' edge='start' color='inherit' aria-label='logo'>
                         Home
                     </IconButton>
                     <Typography variant='h4' component='div' sx={{ flexGrow: 1 }}>
-                        
                     </Typography>
                     <Stack direction='row' spacing={3}>
                         <Button color='inherit'>
