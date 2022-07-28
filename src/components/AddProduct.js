@@ -33,7 +33,7 @@ function AddProduct() {
         console.log(data)
       })}
     
-      
+
 
   return (
     <div>
@@ -75,7 +75,7 @@ function AddProduct() {
             <div className="Button">
               <Button onClick={(event) => handleClick(event)}
                 variant="contained"
-                color="primary"
+                color="secondary"
               >
                 Register Product
               </Button>

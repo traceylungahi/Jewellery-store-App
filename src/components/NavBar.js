@@ -11,7 +11,7 @@ function NavBar() {
             <AppBar position='static' color='error'>
                 <Toolbar style={{ margin: "0.5px" }}>
                     <IconButton size='small' edge='start' color='inherit' sans-serif='logo'>
-                        Home
+                    <NavLink to='/' color='white'>HOME</NavLink>
                     </IconButton>
                     <Typography variant='h4' component='div' sx={{ flexGrow: 3 }}>
                     </Typography>
