@@ -43,15 +43,18 @@ function ProductHolder({ product }) {
                                         <Typography variant="body2" color="grey" className={classes.multiLine}>
                                             {prod.description}
                                         </Typography>
-                                        <Typography variant="body2" color="grey" className={classes.multiLine}>
-                                            {prod.price}
-                                        </Typography>
                                     </CardContent>
                                   </div>
                                 </CardActionArea>
                                 <CardActions style={{ backgroundColor: "bisque" }}>
-                                    <Button size="small" color="primary">
-                                        Add to cart
+                                    <Button size="small" color="secondary">
+                                    ${prod.price}
+                                    </Button>
+                                    <Button size="small" color="secondary">
+                                      Add to cart
+                                    </Button>
+                                    <Button size="small" color="secondary">
+                                      Remove
                                     </Button>
                                 </CardActions>
                             </Card>

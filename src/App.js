@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home';
 import NavBar from './components/NavBar';
-import Contacts from './components/Contacts';
+import About from './components/About';
 import AddProduct from './components/AddProduct';
 import ProductHolder from './components/ProductHolder';
 
@@ -26,7 +26,7 @@ function App() {
             path="/"
             element={<Home product={product} />}
         />
-          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/about" element={<About />} />
           <Route path="/productholder" element={<ProductHolder />} />
           <Route path="/addproduct" element={<AddProduct />} />
       </Routes>

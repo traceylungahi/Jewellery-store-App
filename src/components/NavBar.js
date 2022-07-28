@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import { Typography, AppBar, Button, CssBaseline, Toolbar, Stack } from '@mui/material'
 import IconButton from "@mui/material/IconButton";
 import { NavLink } from 'react-router-dom';
@@ -17,10 +17,10 @@ function NavBar() {
                     </Typography>
                     <Stack direction='row' spacing={3}>
                         <Button color='inherit'>
-                            <NavLink to='/contact' color='white'>Contact</NavLink>
+                            <NavLink to='/about' color='white'>About</NavLink>
                         </Button>
                         <Button color='inherit'>
-                            <NavLink to='/add'>Add Product</NavLink>
+                            <NavLink to='/addproduct'>Add Product</NavLink>
                         </Button>
                     </Stack>
                 </Toolbar>
