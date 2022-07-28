@@ -16,9 +16,9 @@ const useStyles = makeStyles((theme) => ({
 }}))
 
 
-function ProductHolder({ product }) {
+function ProductHolder({ product, deleteProduct }) {
   const url = "http://localhost:3000/products"
-  const [changed, setChanged] = useState(product)
+  
   
   const classes=useStyles()
   // console.log(changed)
@@ -28,7 +28,7 @@ function ProductHolder({ product }) {
         method: "DELETE",
       })
         .then((r) => r.json())
-        .then(() => console.log(id));
+        .then(() => deleteProduct(id));
     }
     
 
@@ -61,7 +61,7 @@ function ProductHolder({ product }) {
                                     <Button size="small" color="secondary">
                                     ${prod.price}
                                     </Button>
-                                    <Button size="small" color="secondary">
+                                    <Button onClick={() => alert(prod.title + 'Added to cart')} size="small" color="secondary">
                                       Add to cart
                                     </Button>
                                     <Button onClick={() => handleRemove(prod.id)} size="small" color="secondary">

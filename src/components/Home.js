@@ -2,11 +2,11 @@ import React from 'react';
 import Header from './Header';
 import ProductHolder from './ProductHolder';
 
-function Home({ product }) {
+function Home({ product, deleteProduct }) {
     return (
         <div>
             <Header />
-            <ProductHolder product={product} />
+            <ProductHolder product={product} deleteProduct={deleteProduct} />
         </div >
     )
 };

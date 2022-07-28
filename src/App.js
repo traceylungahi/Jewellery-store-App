@@ -29,10 +29,10 @@ function App() {
       <Routes>
         <Route
             path="/"
-            element={<Home product={product} />}
+            element={<Home product={product} deleteProduct={deleteProduct}/>}
         />
           <Route path="/about" element={<About />} />
-          <Route path="/productholder" element={<ProductHolder  deleteProduct={deleteProduct}/>} />
+          <Route path="/productholder" element={<ProductHolder  />} />
           <Route path="/addproduct" element={<AddProduct />} />
       </Routes>
     </div>
