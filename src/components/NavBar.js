@@ -8,19 +8,16 @@ function NavBar() {
     return(
         <div>
             <CssBaseline />
-            <AppBar position='static' color='primary'>
+            <AppBar position='static' color='error'>
                 <Toolbar style={{ margin: "0.5px" }}>
-                    <IconButton size='small' edge='start' color='inherit' aria-label='logo'>
+                    <IconButton size='small' edge='start' color='inherit' sans-serif='logo'>
                         Home
                     </IconButton>
                     <Typography variant='h4' component='div' sx={{ flexGrow: 3 }}>
                     </Typography>
                     <Stack direction='row' spacing={3}>
                         <Button color='inherit'>
-                            <NavLink to='/contact'>Contact</NavLink>
-                        </Button>
-                        <Button color='inherit'>
-                            <NavLink to='/about'>About</NavLink>
+                            <NavLink to='/contact' color='white'>Contact</NavLink>
                         </Button>
                         <Button color='inherit'>
                             <NavLink to='/add'>Add Product</NavLink>

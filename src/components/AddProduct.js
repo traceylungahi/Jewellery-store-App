@@ -3,7 +3,7 @@ import "../App.css";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
 
-export default function AddProduct() {
+function AddProduct() {
   return (
     <div>
       <div className="App">
