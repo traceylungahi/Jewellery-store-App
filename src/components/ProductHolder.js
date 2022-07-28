@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from '@mui/material/Card';
 import { makeStyles } from "@material-ui/core";
 import CardContent from '@mui/material/CardContent';
@@ -17,10 +17,21 @@ const useStyles = makeStyles((theme) => ({
 
 
 function ProductHolder({ product }) {
-  const classes=useStyles()
+  const url = "http://localhost:3000/products"
+  const [changed, setChanged] = useState(product)
   
-    // console.log(product)
+  const classes=useStyles()
+  // console.log(changed)
+  
+  function handleRemove(id) {
+      fetch(url + "/" + id, {
+        method: "DELETE",
+      })
+        .then((r) => r.json())
+        .then(() => console.log(id));
+    }
     
+
     return (
         <div>
             <Container>
@@ -53,7 +64,7 @@ function ProductHolder({ product }) {
                                     <Button size="small" color="secondary">
                                       Add to cart
                                     </Button>
-                                    <Button size="small" color="secondary">
+                                    <Button onClick={() => handleRemove(prod.id)} size="small" color="secondary">
                                       Remove
                                     </Button>
                                 </CardActions>

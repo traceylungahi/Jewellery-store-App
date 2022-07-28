@@ -18,6 +18,11 @@ function App() {
       .then((data) => setProduct(data));
   }, []);
 
+  function deleteProduct(id) {
+    const updatedProducts = product.filter((prd) => prd.id !== id);
+    setProduct(updatedProducts);
+  }
+
   return (
     <div className="App">
       <NavBar />
@@ -27,7 +32,7 @@ function App() {
             element={<Home product={product} />}
         />
           <Route path="/about" element={<About />} />
-          <Route path="/productholder" element={<ProductHolder />} />
+          <Route path="/productholder" element={<ProductHolder  deleteProduct={deleteProduct}/>} />
           <Route path="/addproduct" element={<AddProduct />} />
       </Routes>
     </div>

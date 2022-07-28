@@ -21,7 +21,6 @@ function AddProduct() {
       "category": "jewelery",
     } 
     
-
     fetch(url, {
       method: "POST",
       headers: {
@@ -33,6 +32,8 @@ function AddProduct() {
       .then((data) => {
         console.log(data)
       })}
+    
+      
 
   return (
     <div>

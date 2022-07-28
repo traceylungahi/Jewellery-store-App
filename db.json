@@ -47,14 +47,6 @@
         "rate": 1.9,
         "count": 100
       }
-    },
-    {
-      "title": "ring",
-      "price": "6",
-      "description": "nice",
-      "image": "https://images.pexels.com/photos/3634366/pexels-photo-3634366.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "category": "jewelery",
-      "id": 9
     }
   ]
 }
