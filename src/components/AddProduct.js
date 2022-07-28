@@ -30,9 +30,10 @@ function AddProduct() {
   })
       .then((r) => r.json())
       .then((data) => {
+        window.location = '/'
         console.log(data)
       })}
-    
+  
 
 
   return (
