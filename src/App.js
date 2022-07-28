@@ -5,6 +5,7 @@ import Home from './components/Home';
 import About from './components/About';
 import NavBar from './components/NavBar';
 import Contacts from './components/Contacts';
+import AddProduct from './components/AddProduct';
 import ProductHolder from './components/ProductHolder';
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/productholder" element={<ProductHolder />} />
-          <Route path="/addproducts" element={<AddProducts />} />
+          <Route path="/addproduct" element={<AddProduct />} />
       </Routes>
     </div>
   );
