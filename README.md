@@ -74,5 +74,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### Github Code
 https://github.com/traceylungahi/Jewellery-store-App
 
-###License
+### License
 [MIT](https://choosealicense.com/licences/mit/)
