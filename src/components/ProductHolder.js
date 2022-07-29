@@ -21,7 +21,7 @@ function ProductHolder({ product, deleteProduct }) {
   
   
   const classes=useStyles()
-  // console.log(changed)
+
   
   function handleRemove(id) {
       fetch(url + "/" + id, {

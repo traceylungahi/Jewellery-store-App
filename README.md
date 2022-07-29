@@ -1,10 +1,16 @@
-# Getting Started with Create React App
+# Jewellery Store App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Description 
+This is a basic react app depicting a jewellery store. This project entails the use of react to create the app.
+### Available Scripts
 
 In the project directory, you can run:
+
+### `json-server --watch db.json`
+
+Runs the server in watch mode. It watches for file changes. If a `POST` or `DELETE` request is made, changes will be automatically saved to the db.json file
 
 ### `npm start`
 
@@ -53,9 +59,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/c
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
 ### Advanced Configuration
 
@@ -65,6 +68,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+### Author
+[Tracey Lung'ahi](https://github.com/traceylungahi/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Github Code
+https://github.com/traceylungahi/Jewellery-store-App
+
+###License
+[MIT](https://choosealicense.com/licences/mit/)
