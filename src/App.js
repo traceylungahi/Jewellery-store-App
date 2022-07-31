@@ -8,7 +8,7 @@ import AddProduct from './components/AddProduct';
 import ProductHolder from './components/ProductHolder';
 
 function App() {
-  const url = "http://localhost:3000/products";
+  const url = "https://jewellery-store-api.herokuapp.com/products";
   const [product, setProduct] = useState([]);
   
 

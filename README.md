@@ -3,7 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### Description 
-This is a basic react app depicting a jewellery store. This project entails the use of react to create the app.
+This is a basic react app depicting a jewellery store. This project entails the use of react to create the app. It incorporates the use of `material-ui` framework to style the app.
+
 ### Available Scripts
 
 In the project directory, you can run:
@@ -74,5 +75,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### Github Code
 https://github.com/traceylungahi/Jewellery-store-App
 
-###License
+### License
 [MIT](https://choosealicense.com/licences/mit/)
