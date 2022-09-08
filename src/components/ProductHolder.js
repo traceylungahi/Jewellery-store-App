@@ -1,4 +1,5 @@
 import React from "react";
+// import { NavLink } from 'react-router-dom'
 import Card from '@mui/material/Card';
 import { makeStyles } from "@material-ui/core";
 import CardContent from '@mui/material/CardContent';
@@ -17,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 function ProductHolder({ product, deleteProduct }) {
-  const url = "http://localhost:3000/products"
+  const url = "http://localhost:9292/products"
   
   
   const classes=useStyles()
@@ -37,34 +38,37 @@ function ProductHolder({ product, deleteProduct }) {
             <Container>
                 <Grid container spacing={2}>
                     {product.map((prod) => (
-                        <Grid item key={prod.id} xs={10} sm={4} md={4}>
+                        <Grid item key={prod.id} xs={10} sm={4} md={4} >
                             <Card sx={{ maxWidth: 350 }}>
                                 <CardActionArea>
                                     <CardMedia
                                         component="img"
                                         height="140"
-                                        image={prod.image}
+                                        image={prod.image_url}
                                         alt="image"
                                     />
-                                  <div style={{ backgroundColor: "bisque" }}>
+                                  <div style={{ backgroundColor: "brown" }}>
                                     <CardContent>
                                         <Typography gutterBottom variant="h6" color="black" component="div" className={classes.multiLine}>
                                             {prod.title}
                                         </Typography>
-                                        <Typography variant="body2" color="grey" className={classes.multiLine}>
+                                        <Typography variant="body2" color="white" className={classes.multiLine}>
                                             {prod.description}
                                         </Typography>
                                     </CardContent>
                                   </div>
                                 </CardActionArea>
-                                <CardActions style={{ backgroundColor: "bisque" }}>
-                                    <Button size="small" color="secondary">
+                                <CardActions style={{ backgroundColor: "brown" }}>
+                                    <Button size="small" color="primary">
                                     ${prod.price}
                                     </Button>
-                                    <Button onClick={() => alert(prod.title + 'Added to cart')} size="small" color="secondary">
+                                    <Button onClick={() => alert(prod.title + 'Added to cart')} size="small" color="primary">
                                       Add to cart
                                     </Button>
-                                    <Button onClick={() => handleRemove(prod.id)} size="small" color="secondary">
+                                    {/* <Button  size="small" color="primary">
+                                      <NavLink to='/editdescription'>Edit</NavLink>
+                                    </Button> */}
+                                    <Button onClick={() => handleRemove(prod.id)} size="small" color="primary">
                                       Remove
                                     </Button>
                                 </CardActions>

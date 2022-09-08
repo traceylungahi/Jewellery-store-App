@@ -4,7 +4,7 @@ import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
 
 function AddProduct() {
-  const url = "http://localhost:3000/products";
+  const url = "http://localhost:9292/products";
 
   const [title, setTitle] = useState("");
   const [price, setPrice] = useState("");
@@ -17,7 +17,7 @@ function AddProduct() {
       title,
       price, 
       description,
-      image,
+      "image_url": image,
       "category": "jewelery",
     } 
     

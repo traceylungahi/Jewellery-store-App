@@ -6,9 +6,10 @@ import NavBar from './components/NavBar';
 import About from './components/About';
 import AddProduct from './components/AddProduct';
 import ProductHolder from './components/ProductHolder';
+// import EditDescription from './components/EditDescription';
 
 function App() {
-  const url = "https://jewellery-store-api.herokuapp.com/products";
+  const url = "http://localhost:9292/products";
   const [product, setProduct] = useState([]);
   
 
@@ -34,6 +35,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/productholder" element={<ProductHolder  />} />
           <Route path="/addproduct" element={<AddProduct />} />
+          {/* <Route path="/editdescription" element={<EditDescription />} /> */}
       </Routes>
     </div>
   );
